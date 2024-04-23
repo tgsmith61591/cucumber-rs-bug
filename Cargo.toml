@@ -1,0 +1,20 @@
+[package]
+name = "cucumber-rs-bug"
+version = "0.1.0"
+edition = "2021"
+include = [
+    "/src/",
+    "/tests/example.rs",
+]
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+cucumber = { version = "0.19.0", features = ["output-json", "output-junit"] }
+flume = "0.10.13"
+futures = "0.3"
+futures-util = "0.3.4"
+tokio = { version = "1.28.2", features = ["full"] }
+
+[[test]]
+name = "example"
+harness = false
