@@ -1,5 +1,7 @@
 # `cucumber-rs` bug repro
 
+This repo reproduces [this issue](https://github.com/cucumber-rs/cucumber/issues/331) in `cucumber-rs`.
+
 ### Setup:
 
 ```bash
